@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monster Gate Counting Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game">
+    <div class="top-bar">
+      <h1>Monster Gate Counting</h1>
+      <div id="timer">พร้อมเริ่ม</div>
+    </div>
+
+    <div class="scene-wrap">
+      <div id="scene">
+        <div class="gate gate-red" data-name="RED"></div>
+        <div class="gate gate-yellow" data-name="YELLOW"></div>
+        <div class="gate gate-blue" data-name="BLUE"></div>
+      </div>
+
+      <div id="blackout" class="blackout">
+        <div id="blackoutText">กดเริ่มเกม</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <p class="rule">
+        มอนสเตอร์จะค่อย ๆ เข้ามาทีละตัวจากหลายทิศทาง แล้วเดิน/บินเข้าประตู
+        พอโดนประตูจะจางหายไป ให้นับเหตุการณ์ที่เกิดขึ้น
+      </p>
+
+      <button id="startBtn">เริ่มเกม</button>
+      <button id="guideBtn">ดูรายชื่อมอนสเตอร์</button>
+
+      <div id="questions" class="questions hidden"></div>
+
+      <div class="buttons">
+        <button id="submitBtn" class="hidden">Submit Answers</button>
+        <button id="retryBtn" class="hidden">เล่นรอบเดิมอีกครั้ง</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+  </div>
+  <div id="monsterGuideModal" class="modal hidden">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>รายชื่อมอนสเตอร์</h2>
+      <button id="closeGuideBtn">ปิด</button>
+    </div>
+
+    <div id="monsterGuideGrid" class="monster-guide-grid"></div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
