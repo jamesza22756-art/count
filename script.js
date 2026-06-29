@@ -399,7 +399,7 @@ function endGame() {
   retryBtn.classList.remove("hidden");
   timer.textContent = "กำลังตอบคำถาม";
 
-  console.log("เฉลยสำหรับคนทำเกม:", counters);
+  //console.log("เฉลยสำหรับคนทำเกม:", counters);
 }
 
 function checkAnswers() {
@@ -430,7 +430,7 @@ function checkAnswers() {
   if (score === questions.length) {
     result.textContent = "ผ่าน! ถูกครบ 10/10";
     result.style.color = "#22c55e";
-    blackoutText.textContent = "YOU WIN!";
+    blackoutText.textContent = "NEVER STOP HAUNTING";
   } else {
     result.textContent = `ยังไม่ผ่าน ถูก ${score}/10`;
     result.style.color = "#f87171";
