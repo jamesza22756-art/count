@@ -399,7 +399,7 @@ function endGame() {
   retryBtn.classList.remove("hidden");
   timer.textContent = "กำลังตอบคำถาม";
 
-  //console.log("เฉลยสำหรับคนทำเกม:", counters);
+  console.log("เฉลยสำหรับคนทำเกม:", counters);
 }
 
 function checkAnswers() {
